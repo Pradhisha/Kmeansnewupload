@@ -7,8 +7,14 @@ import uuid
 from numpy import vstack,array
 from scipy.cluster.vq import *
 from flask import Flask,render_template,request
+import pypyodbc
+import time
+import random
+import urllib
+import datetime
+import json
 
-app = Flask(__name__,template_folder="templates")
+app = Flask(__name__)
 coloumn_names = ["pclass","survived","name","sex","age","sibsp","parch","ticket","fare","cabin","embarked","boat","body","home.dest"]
 myfile = open("titanic3.csv","r")
 csv_reader = csv.DictReader(myfile, fieldnames=coloumn_names)
@@ -138,6 +144,5 @@ def Piegraph():
   return render_template('d3piechart.html')
 
 
-
-if __name__ == "__main__":
-    app.run(debug=True,port=5000)
+if __name__ == '__main__':
+  app.run()
