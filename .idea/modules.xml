@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/KmeansMasterCloud.iml" filepath="$PROJECT_DIR$/.idea/KmeansMasterCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Assignment6_Kmeans-master.iml" filepath="$PROJECT_DIR$/.idea/Assignment6_Kmeans-master.iml" />
     </modules>
   </component>
 </project>
